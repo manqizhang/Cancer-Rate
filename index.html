@@ -73,18 +73,14 @@
     </div>
     <div class="map-overlay" id="legend"></div>
     <div id='map' style='width: 400px; height: 300px;'></div>
-    <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoibWFucWl6aGFuZyIsImEiOiJjazIwc2VzMncwMHo4M2NwYXA3c29qZ29jIn0.pNUrsdgYEroaSBSDwTHfRA';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/streets-v11'
-});
-</script>
+    
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoibWFucWl6aGFuZyIsImEiOiJjazIwc2VzMncwMHo4M2NwYXA3c29qZ29jIn0.pNUrsdgYEroaSBSDwTHfRA';
       var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/manqizhang/ckbaa6a5q0bw71ilfupg48dy8'
+        center: [-87.805, 42.328], // starting position [lng, lat]
+         zoom: 9.49 // starting zoom
       });
 
       map.on('load', function() {
