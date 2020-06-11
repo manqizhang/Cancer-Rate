@@ -4,15 +4,9 @@
     <meta charset="utf-8" />
     <title>Cancer Rate</title>
     <meta name="robots" content="noindex, nofollow" />
-    <meta
-      name="viewport"
-      content="initial-scale=1,maximum-scale=1,user-scalable=no"
-    />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
-    <link
-      href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css"
-      rel="stylesheet"
-    />
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css" rel="stylesheet"/>
     <style>
       body {
         margin: 0;
@@ -77,10 +71,16 @@
       <div id="pd"><p>This is a rate per 100,000</p></div>
     </div>
     <div class="map-overlay" id="legend"></div>
-
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+mapboxgl.accessToken = 'pk.eyJ1IjoibWFucWl6aGFuZyIsImEiOiJjazIwc2VzMncwMHo4M2NwYXA3c29qZ29jIn0.pNUrsdgYEroaSBSDwTHfRA';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'
+});
+</script>
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoibWFucWl6aGFuZyIsImEiOiJjazIwc2VzMncwMHo4M2NwYXA3c29qZ29jIn0.pNUrsdgYEroaSBSDwTHfRA';
-
       var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/manqizhang/ckbaa6a5q0bw71ilfupg48dy8'
